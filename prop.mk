@@ -144,15 +144,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.extension_library=libqti-perfd-client.so
 
-#QTI Performance
-PRODUCT_PROPERTY_OVERRIDES += \
-vendor.enable_prefetch=1 \
-vendor.iop.enable_uxe=1 \
-vendor.iop.enable_prefetch_ofr=1 \
-vendor.perf.iop_v3.enable=1 \
-ro.vendor.at_library=libqti-at.so \
-persist.vendor.qti.games.gt.prof=1
-
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.use_data_netmgrd=true \
@@ -198,7 +189,8 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1 \
-persist.vendor.radio.prefer_spn=1
+persist.vendor.radio.prefer_spn=1 \
+persist.vendor.qti.pie.telephony=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -20,7 +20,6 @@ $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-syberia
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -163,8 +162,8 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Doze mode
-#PRODUCT_PACKAGES += \
-#    XiaomiDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -279,10 +278,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-	
-# OTA Updates
-PRODUCT_PACKAGES += \
-    Updates
 
 # Power
 PRODUCT_PACKAGES += \
@@ -297,11 +292,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-	
-#QTI performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -357,7 +347,7 @@ PRODUCT_COPY_FILES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.tissot
+    android.hardware.usb@1.0-service.basic
 
 # VNDK
 PRODUCT_PACKAGES += \
