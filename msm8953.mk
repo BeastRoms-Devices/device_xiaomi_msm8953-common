@@ -276,6 +276,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 	
+# OTA
+PRODUCT_PACKAGES += \
+    Updates
+	
 # Xiaomi Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
